@@ -44,8 +44,7 @@ class Tic_Tac_Toe:
         else:
             self.player = 'X'
 
-
-# Create two instances of Tic_Tac_Toe for each player
+    # Create two instances of Tic_Tac_Toe for each player
 player_1_symbol = input("Welcome Player 1. Please input 'X' or 'O' to continue. ").upper()
 while player_1_symbol != "X" and player_1_symbol != "O":
     player_1_symbol = input("Whoops! it looks like you didn't input 'X' or 'O'. Please input 'X' or 'O' to continue. ").upper()
@@ -54,7 +53,7 @@ player_1 = Tic_Tac_Toe(player_1_symbol)
 player_2_symbol = 'X' if player_1_symbol == 'O' else 'O'
 player_2 = Tic_Tac_Toe(player_2_symbol)
 
-# Game Loop
+    # Game Loop
 current_player = player_1 # start w/ player 1
 while True:
     current_player.display_board()
